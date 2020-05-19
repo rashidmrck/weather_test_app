@@ -7,7 +7,7 @@ const kTempTextStyle = TextStyle(
 
 const kMessageTextStyle = TextStyle(
   fontFamily: 'Spartan MB',
-  fontSize: 60.0,
+  fontSize: 50.0,
 );
 
 const kButtonTextStyle = TextStyle(
@@ -17,4 +17,23 @@ const kButtonTextStyle = TextStyle(
 
 const kConditionTextStyle = TextStyle(
   fontSize: 100.0,
+);
+
+const kapiKey = 'd2d996274061f0dfc9b0d916ea969df7';
+const kapiUrl = 'http://api.openweathermap.org/data/2.5/weather';
+const ktextFieldDecoration = InputDecoration(
+  filled: true,
+  fillColor: Colors.white,
+  icon: Icon(
+    Icons.location_city,
+    color: Colors.white,
+  ),
+  border: OutlineInputBorder(
+    borderRadius: BorderRadius.all(Radius.circular(10)),
+    borderSide: BorderSide.none,
+  ),
+  hintText: 'Enter City Name',
+  hintStyle: TextStyle(
+    color: Colors.grey,
+  ),
 );
